@@ -1,7 +1,14 @@
 #include<iostream>
-
+#include<set>
 using namespace std;
 
+int count(const int *c,int loc){
+	set<int>  vee;
+	for(int i = 0;i < loc;i++){
+		vee.insert(c[i]);
+	}
+	return vee.size();
+}
 //Write function count() here.
 
 int main(){	
